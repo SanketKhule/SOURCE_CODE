@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+body{
+    background: #000000;
+}
+nav h1 {
+    font-family: 'Aclonica', sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 2em;
+    margin: 30px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: #4cd1de;
+}
+
+.open {
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+@media(max-width:768px) {
+
+    /* ================================= Tablet ====================================== */
+    nav ul {
+        position: fixed;
+        top: 80px;
+        right: -100%;
+        height: 70vh;
+        width: 100vw;
+        background: black;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s;
+        z-index: 1;
+        margin: 0;
+        transition: all 0.3s ease;
+    }
+
+    nav ul li {
+        margin: 20px 0;
+        padding: 10px 20px;
+    }
+
+    .open {
+        display: block;
+        top: 15px;
+        right: 20px;
+        position: absolute;
+        cursor: pointer;
+    }
+
+    #check:checked~ul {
+        right: 0;
+    }
+
+    li:hover {
+        /* background: #4cd1de; */
+        border-radius: 10px;
+        transition: 0.3s;
+    }
+
+    nav h1 {
+        margin: 15px;
+        font-size: 1.5em;
+    }
+
+}
+
+/* ================================= Large Devices ====================================== */
+@media(max-width:480px) {
+    nav h1 {
+        font-size: 1.2em;
+        margin: 15px;
+        width: 100%;
+    }
+
+    nav ul {
+        top: 50px;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    nav .open {
+        top: 15px;
+        right: 20px;
+        font-size: 1.2em;
+    }
+
+    nav ul li {
+        margin: 15px 0;
+        padding: 10px 15px;
+        font-size: 0.9em;
+    }
+}
+
+/* ================================= Medium Devices ====================================== */
+@media(max-width:375px) {
+    nav h1 {
+        font-size: 1em;
+        margin: 15px;
+        width: 100%;
+    }
+
+    nav ul {
+        top: 50px;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    nav .open {
+        top: 15px;
+        right: 20px;
+        font-size: 1em;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        padding: 8px 10px;
+        font-size: 0.8em;
+    }
+}
+
+/* ================================= Small Devices ====================================== */
+@media(max-width:320px) {
+    nav {
+        width: 100%;
+    }
+
+    nav h1 {
+        font-size: 1em;
+        margin: 15px;
+        width: 100%;
+    }
+
+    nav ul {
+        top: 30px;
+        /* left: 0; */
+        height: 100vh;
+        width: 100vw;
+    }
+
+    nav .open {
+        top: 15px;
+        right: 20px;
+        font-size: 0.8em;
+    }
+
+    nav ul li {
+        margin: 8px 0;
+        padding: 5px 8px;
+        font-size: 0.7em;
+        /* width: 100%; */
+    }
+}
+
+/* ================================= Extra Large Devices ====================================== */
+@media(min-width:2560px) {
+    nav h1 {
+        font-size: 4em;
+        margin: 30px;
+    }
+
+    nav ul li {
+        margin: 0 25px;
+        font-size: 2em;
+    }
+}
+
+/* ================================= Navbar Media Queries End  ===================================== */
+
+
+
+
+/* ================================= Home Page Styles ===================================== */
+.container_main {
+    /* height: 100vh; */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+   
+}
+.content {
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.content h1 {
+    font-family: 'Aclonica', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #4cd1de;
+}
+.content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    color: #ccc;
+}
+.social_media {
+    margin-top: 20px;
+
+}
+.social_media a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+.social_media i:hover {
+    color: #4cd1de;
+}
+/* ================================= Home Page Styles ===================================== */
+
+
+/* ================================= source code Styles ===================================== */
+
+/* ================================= Source Code ====================================== */
+.card_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.card{
+    max-width: 300px;
+    background: #1a1a1a;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px;
+
+}
+.card img{
+    width: 100%;
+    height: auto;
+}
+.card-header{
+    font-size: 1.5em;
+    margin: 15px 0;
+    color: #4cd1de;
+}
+.card p{
+    padding: 0 10px 20px 10px;
+    color: #ccc;
+    font-size: 1em;
+}
+.card a{
+    font-size: 0.5rem;
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    background: #4cd1de;
+    color: black;
+    border-radius: 25px;
+    transition: background 0.3s;
+}
+.card a:hover{
+    background: #39b3b8;
+    color: white;
+}
+
+
+
+/* ================================= Footer Code ====================================== */
+footer {
+    background: #1a1a1a;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+/* ================================= Footer Code ====================================== */
+.card-2{
+    display: none;
+}
